@@ -1,7 +1,15 @@
 body{
     text-align: center;
+    margin: 0;
 }
 
 button{
     font-size: large;
+}
+
+#score{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 100px;
+    height: 100px;
 }
