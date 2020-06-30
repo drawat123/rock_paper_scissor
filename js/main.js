@@ -66,7 +66,16 @@ function game(playerSelection,computerSelection) {
     pc.textContent = computer;
     noOfTimes++;
     if(noOfTimes==5){
-        paragraph.innerText = "The score after 5 games.";
+        paragraph.innerText = "The score after 5 games\nYou: "+player+"\n Computer: "+computer;
+        if(player>computer){
+            paragraph.innerText+="\nYAYY YOU WON!!!";
+        }
+        else if(computer>player){
+            paragraph.innerText+="\nYOU LOST :(";
+        }
+        else{
+            paragraph.innerText+="\nIT WAS A DRAW!!!";
+        }
         player=0;
         computer=0;
         noOfTimes=0;
